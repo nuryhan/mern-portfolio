@@ -1,0 +1,32 @@
+.education {
+    margin: 20px 0;
+}
+
+.single-education {
+    background: rgb(17,115,145);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* width: 100%; */
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 10px;
+    letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .education-center {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        flex-grow: 2;
+    }
+    .single-education {
+        display: flex;
+        width: 600px;
+        padding: 10px;
+       clip-path: polygon(0 0,100% 0,95% 100%, 0% 100%);
+    }
+
+}

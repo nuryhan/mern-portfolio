@@ -1,0 +1,64 @@
+.header {
+    width: 100%;
+    height: 500px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.particle {
+    width:100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: cover;
+}
+
+#tsparticles {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../../images/workspace.jpg");
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover no-repeat;
+  position: relative;
+  z-index: -10;
+}
+
+
+
+.fullName {
+    position: absolute;
+
+}
+
+
+.fullName h1 {
+    color: #fff;
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 1px 2px black;
+}
+.fullName h1 span {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header {
+      
+      height: 400px;
+  }
+.particle {
+    height: 300px;
+    margin-bottom: 0;
+}
+
+#tsparticles {
+    background-size: contain;
+}
+
+    .fullName {
+        position: absolute;
+        top: 50%;
+    }
+}

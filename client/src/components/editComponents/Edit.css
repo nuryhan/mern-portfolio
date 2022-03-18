@@ -1,0 +1,73 @@
+.edit {
+    min-height: 70vh;
+}
+.edit .same-component {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.edit .same-form .btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#textarea {
+    font-size: 14px;
+   outline: none;
+   font-weight: 500;
+    font-family: 'Haebo', sans-serif;
+    border-radius: 10px;
+    color: #666666;
+    border: 2px solid transparent;
+    background-color: #dddddd;
+    line-height: 1.4;
+   
+}
+#textarea:focus {
+    cursor: text;
+    color: #333333;
+    border-color: #333333;
+}
+
+.cancel-btn {
+    background: crimson;
+}
+
+.cancel-btn:hover {
+    background: lightcoral;
+}
+.edit .same-form .btns {
+    margin-top: 3rem;
+}
+
+.edit .same-form .btns .updateBtn {
+    background: blue;
+}
+
+.edit .same-form .btns .updateBtn:hover {
+    background: lightblue;
+}
+
+.updated {
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    color: green;
+}
+.new-updated {
+    display: block;
+}
+
+/* upload form */
+
+.upload {
+    display: flex;
+    
+}
+.upload input, .upload #file_img  {
+    margin-top: 0;
+}

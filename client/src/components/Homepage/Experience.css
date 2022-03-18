@@ -1,0 +1,31 @@
+.experience-center {
+    margin-top: 20px;
+}
+
+.single-experience {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    padding: 5px 10px;
+    letter-spacing: 0.1rem;
+    background: rgb(191,192,192);
+    color: #424242;
+}
+
+@media screen and (min-width: 860px) {
+    .experience-center {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    .single-experience {
+        flex:0 0 calc(50% - 20px);
+        margin-right: 0;
+        margin-left: 0;
+        padding: 10px;
+    }
+}

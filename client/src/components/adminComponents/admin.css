@@ -1,0 +1,249 @@
+.same-form {
+    box-shadow: 0 0 2px 1px gray;
+    padding: 10px;
+    width: 100%;
+}
+
+.admin-title {
+    color: #555;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+}
+
+.same-form form {
+    display: flex;
+    flex-direction: column;
+}
+.same-form label {
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    color: #424242;
+}
+form h4 {
+    color: #555;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+    display: none;
+}
+
+form textarea {
+    padding: 7px;
+    border: 1px solid gray;
+    outline: none;
+}
+form input {
+    padding: 7px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+form button {
+    margin-top: 5px;
+    padding: 5px;
+    background: gray;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    width: 140px;
+}
+
+form button:hover {
+   background: #252525;
+   color: #fff;
+}
+
+.same-item {
+    margin: 20px 0;
+    border: 1px solid lightgray;
+    padding: 10px;
+    position: relative;
+}
+#aboutInfo div  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 3px;
+}
+
+#aboutInfo {
+    margin-top: 2rem;
+}
+
+
+
+.item-delete-tab {
+    background: crimson;
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+    font-weight: 400;
+    width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    display: block;
+    transform: translateX(-50%);
+}
+#itemdel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-left: 5px;
+}
+
+.same-admin .single-education {
+    margin-top: 10px;
+
+}
+.projects-admin .single-project {
+    margin-top: 10px;
+}
+.fa-trash {
+    color: crimson;
+    margin-left: 20px;
+}
+
+.fa-edit {
+    color: green;
+    margin-left: 10px;
+}
+.fa-trash:hover, .fa-edit:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 664px) {
+    .same-component {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .same-form {
+        flex: 0 0 300px;
+    }
+
+    .same-item {
+        flex: 1;
+        margin: 0;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 868px) {
+ 
+
+    .same-form {
+        flex: 0 0 400px;
+    }
+
+   
+}
+
+/* EducationAdmin css */
+.same-admin {
+    margin-bottom: 5px;
+}
+.same-admin .single-education p {
+    color: lightgray;
+}
+/* Projects admin css */
+.projects-admin .single-project-img {
+    width: 100%;
+    height: 200px;
+}
+
+.projects-admin .single-project-img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and(min-width:574px) {
+    .projects-admin .single-project-img {
+        width: 100%;
+        height: 350px;
+    }
+    .projects-admin .single-project-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and(min-width:664px) {
+    .projects-admin .single-project {
+        display: block;
+    }
+
+    .projects-admin .single-project-img {
+        width: 275px;
+        height: 180px;
+    }
+    .projects-admin .single-project-img img {
+        width: 100%;
+        height: 100%;
+        flex: 1;
+    }
+    .single-project-info {
+        flex: 1;
+    }
+}
+
+@media screen and(min-width:864px) {
+    .projects-admin .single-project-img {
+        width: 100%;
+        height: 100px;
+    }
+
+    .projects-admin .single-project-img img {
+        width: 150px;
+        height: 100%;
+    }
+    
+    .projects-admin .single-project {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
+
+/* upload */
+.upload {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20px;
+}
+.upload input {
+    align-self: flex-start;
+    width: 200px;
+}
+#file_img {
+    width: 115px;
+    height: 45px;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+.upload img {
+    width: 115px;
+    display: block;
+    height: 90px;
+}
+#file_img span {
+    position: absolute;
+    top: -10px;
+    right: -7px;
+    cursor: pointer;
+    color: crimson;
+    background: lightgray;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
