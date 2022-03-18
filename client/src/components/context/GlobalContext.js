@@ -28,6 +28,8 @@ export const AppProvider = ({ children }) => {
 
         if (verified.data === false) {
           return localStorage.clear();
+        } else if (verified.data === true) {
+          setIsLogin(true);
         } else {
           setIsLogin(false);
         }
@@ -36,7 +38,7 @@ export const AppProvider = ({ children }) => {
     };
 
     checkLoginToken();
-  }, [url]);
+  }, []);
 
   // fetching  data
 

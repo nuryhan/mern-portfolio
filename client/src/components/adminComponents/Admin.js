@@ -1,15 +1,16 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AppContext } from "../context/GlobalContext";
 import AboutAdmin from "./AboutAdmin";
 import "./admin.css";
 import EducationAdmin from "./EducationAdmin";
 import ExperienceAdmin from "./ExperienceAdmin";
 import ProjectsAdmin from "./ProjectsAdmin";
+import api from "../../api/Item";
 
 const Admin = () => {
   const state = useContext(AppContext);
 
-  const [isLogin] = state.isLogin;
+  const [isLogin, setIsLogin] = state.isLogin;
 
   return (
     <div className="main-container">
